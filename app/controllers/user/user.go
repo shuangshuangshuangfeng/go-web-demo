@@ -2,15 +2,16 @@ package user
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
 	"go-web-demo/app/constants"
 	"go-web-demo/app/constants/error_code"
 	"go-web-demo/app/controllers"
 	"go-web-demo/app/repositories"
 	"go-web-demo/app/validators"
 	"go-web-demo/kernel/goredis"
-	"gopkg.in/go-playground/validator.v9"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
+	"gopkg.in/go-playground/validator.v9"
 )
 
 type UserController struct {
@@ -60,4 +61,16 @@ func (u UserController) BindPhone(ctx *gin.Context) {
 	u.ResponseJson(ctx, http.StatusOK, error_code.Success, "绑定成功", nil)
 	// 验证成功，丢弃验证码
 	go redisDefault.Del(fmt.Sprintf(constants.SMSSendCodeKey, userInfo.UserId, params.Phone))
+}
+
+// HelloWord 返回JSON格式数据/*
+func (u UserController) HelloWord(ctx *gin.Context) {
+	u.ResponseJson(ctx, http.StatusOK, error_code.Success, "nihao ,heheheh ", nil)
+	return
+}
+
+// Index 接口跳转至指定页面
+func (u UserController) Index(ctx *gin.Context) {
+	ctx.HTML(200, "luntan.html", nil)
+	return
 }

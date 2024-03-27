@@ -55,7 +55,7 @@ func ResponseLogMiddleware(ctx *gin.Context) {
 	if ctx.Request.URL.Path == "/cos/object" && ctx.Request.Method == "POST" {
 		return
 	}
-	zlog.Logger.WithGinContext(ctx).Warn("响应返回", zap.Any("response_body", blw.body.String()), zap.Any("time", fmt.Sprintf("%sms", strconv.Itoa(duration))))
+	//zlog.Logger.WithGinContext(ctx).Warn("响应返回", zap.Any("response_body", blw.body.String()), zap.Any("time", fmt.Sprintf("%sms", strconv.Itoa(duration))))
 	statusCode := ctx.Writer.Status()
 	fmt.Println(statusCode)
 	//if statusCode >= 400 {

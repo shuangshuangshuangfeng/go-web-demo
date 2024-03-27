@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://v3.bootcss.com/examples/dashboard/ -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://v3.bootcss.com/favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="resources/assets/font-awesome/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="resources/assets/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="resources/assets/css/LTstyle.css" rel="stylesheet" type="text/css">
+
+    <link href="resources/assets/css-second/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="resources/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]>
+    <script src="resources/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./Dashboard Template for Bootstrap_files/ie-emulation-modes-warning.js"></script>
+    <script src="resources/assets/js/jquery-3.3.1.min.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" style="height:90px;">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="resources/assets/img/logo.jpeg" alt=""></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right" style="position:relative; margin-top:20px;">
+                <li><a href="#">主页</a></li>
+                <li><a href="#">特产</a></li>
+                <li><a href="#">博客</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">退出登录</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" style="position: relative; top:20px;">
+                <input type="text" class="form-control" placeholder="搜索相关话题">
+            </form>
+        </div>
+    </div>
+</nav>
+<!--左边面板-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" style="position: relative;top:20px;height:900px;">
+            <ul class="nav nav-sidebar"><br><br>
+                <li class="active"><a href="#">我的话题<span class="sr-only">(current)</span></a></li>
+                <li class="collect"><a href="#">我的收藏</a></li>
+                <li class="reply"><a href="#">我的评论</a></li>
+                <li class="nice"><a href="#">我的点赞</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li><a href="#">个人资料</a></li>
+                <li><a href="#">黑名单</a></li>
+                <li><a href="#">修改密码</a></li>
+                <li><a href="#">设置</a></li>
+            </ul>
+        </div>
+        <!--右边面板-->
+        <div id="right-box">
+            <div id="mine-topic">
+                <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"
+                     style="position: relative; margin-top:-850px;">
+                    <h1 class="page-header">我的话题</h1>
+                    <div class="list-group">
+                        <div>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">柳州螺蛳粉<small class="text-muted"
+                                                                      style="position: relative;float:right">12:00</small>
+                                    </h5>
+                                </div>
+                                <p class="mb-1">今天坐了4小时车为了一口柳州螺蛳粉...</p>
+                                <small class="text-muted">
+                                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                                    母猪上树</small>
+                                </p>
+                                <div class="tb1"><i class="fa fa-eye"></i>16&nbsp;&nbsp;<i class="fa fa-commenting"></i>178&nbsp;&nbsp;<i
+                                        class="fa fa-star-o"></i>13&nbsp;&nbsp;<i class="fa fa-thumbs-o-up">6</i></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">小学回忆啊！！<small class="text-muted"
+                                                                        style="position: relative;float:right">12:20</small>
+                                    </h5>
+                                </div>
+                                <p class="mb-1">学校门口居然卖这个...</p>
+                                <small class="text-muted">
+                                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                                    啦啦啦德玛西亚</small>
+                                <div class="tb1"><i class="fa fa-eye"></i>16&nbsp;&nbsp;<i class="fa fa-commenting"></i>178&nbsp;&nbsp;<i
+                                        class="fa fa-star-o"></i>13&nbsp;&nbsp;<i class="fa fa-thumbs-o-up">6</i></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">求助 <small class="text-muted"
+                                                                 style="position: relative;float:right">12:10</small>
+                                    </h5>
+                                </div>
+                                <p class="mb-1">深圳哪里的新疆餐厅正宗呢...</p>
+                                <small class="text-muted">
+                                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                                    吃不到鸡</small>
+                                <div class="tb1"><i class="fa fa-eye"></i>13&nbsp;&nbsp;<i class="fa fa-commenting"></i>170&nbsp;&nbsp;<i
+                                        class="fa fa-star-o"></i>123&nbsp;&nbsp;<i class="fa fa-thumbs-o-up">63</i>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">曝光黑店<small class="text-muted"
+                                                                    style="position: relative;float:right">12:05</small>
+                                    </h5>
+                                </div>
+                                <p class="mb-1">曝光某宝上的“XXX店”出售过期土特产...</p>
+                                <small class="text-muted">
+                                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                                    打假小学生</small>
+                                <div class="tb1"><i class="fa fa-eye"></i>162&nbsp;&nbsp;<i
+                                        class="fa fa-commenting"></i>18&nbsp;&nbsp;<i class="fa fa-star-o"></i>123&nbsp;&nbsp;<i
+                                        class="fa fa-thumbs-o-up">63</i></div>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">来一波佛山<small class="text-muted"
+                                                                      style="position: relative;float:right">11:10</small>
+                                    </h5>
+                                </div>
+                                <p class="mb-1">明信老铺的双皮奶和炸牛奶！！！</p>
+                                <small class="text-muted">
+                                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                                    舔食怪</small>
+                                <div class="tb1"><i class="fa fa-eye"></i>116&nbsp;&nbsp;<i
+                                        class="fa fa-commenting"></i>18&nbsp;&nbsp;<i class="fa fa-star-o"></i>133&nbsp;&nbsp;<i
+                                        class="fa fa-thumbs-o-up">63</i></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--javaScript-->
+        <script>
+            $(document).ready(function () {
+                $(".collect").click(function () {
+                    $("#mine-topic").hide(function () {
+                        $("#right-box").load("collect.txt #mine-collect");
+                    });
+                });
+            });
+        </script>
+    </div>
+</div>
+
+</body>
+</html>

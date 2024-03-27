@@ -5,15 +5,15 @@ pid_file="go-web-demo.pid"
 jwt_sign="7AsBMHoAWeWkg1spyAjflanVOgHNJzVynHwEC1ZM2ZcD5dQTHcOn3asMdhBwzQ65"
 
 [http]
-    listen = "0.0.0.0:9903"
+    listen = "0.0.0.0:8080"
 [mysql]
     [mysql.default]
-        datasource = "root:UVfzQX8a7i^JYiO$98B3RA9%PwxVTi%w@tcp(127.0.0.1:3380)/config?charset=utf8mb4&parseTime=True&loc=Local"
+        datasource = "root:nvajKKH.nj/123@tcp(127.0.0.1:3306)/config?charset=utf8mb4&parseTime=True&loc=Local"
         timeout = 3000 # 毫秒
 [redis]
     [redis.default]
-        addr = "127.0.0.1:6350"
-        password = "Mbfk*LmfgnLon7TV@xdGIcon4m5t3xEY"
+        addr = "127.0.0.1:6379"
+        password = "admin123"
         db = 0
         timeout = 3000 # 毫秒
 [log]

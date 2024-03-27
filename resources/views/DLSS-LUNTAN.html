@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>DLSS-LUNTAN</title>
+    <meta charset="utf-8">
+
+
+    <!--css-->
+    <link rel="stylesheet" href=>
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap-reboot.min.css">
+
+    <link rel="stylesheet" href="resources/assets/font-awesome/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="resources/assets/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="resources/assets/css/LTstyle.css" rel="stylesheet" type="text/css">
+
+    <!--js-->
+    <script src="resources/assets/js/jquery-3.3.1.min.js"></script>
+
+
+</head>
+<body>
+<!--顶部主菜单 搜索栏-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="resources/assets/img/logo.jpeg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">主页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">特产</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">博客</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">关于我们</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="话题搜索">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+    </div>
+</nav>
+<!--左侧按钮-->
+<div class="btn-group-vertical" data-toggle="buttons">
+    <button type="button" style="background-color: rgb(233, 121, 16);border-color: rgb(233, 121, 16)"
+            class="btn btn-primary">我的话题
+    </button>
+    <button type="button" style="background-color: rgb(233, 121, 16);border-color: rgb(233, 121, 16)"
+            class="btn btn-primary">我的收藏
+    </button>
+    <button type="button" style="background-color: rgb(233, 121, 16);border-color: rgb(233, 121, 16)"
+            class="btn btn-primary">我的评论
+    </button>
+    <button type="button" style="background-color: rgb(233, 121, 16);border-color: rgb(233, 121, 16)"
+            class="btn btn-primary">我的点赞
+    </button>
+</div>
+<!--今日热门话题框-->
+<div id="HotTopic">
+    <div class="card-mb-3">
+        <h3 class="card-header" style="background:#FF9900">今日热门话题</h3>
+        <div class="card-body">
+            <h6 class="card-subtitle text-muted">
+                <div style="width:40px;height:40px;border-radius:50px;border:solid rgb(100,100,100) 1px;" class=imag>
+                    <img src="resources/assets/img/gril.jpg" alt=""/></div>
+                乌克兰小乳猪
+            </h6>
+            <h5 class="card-title">潮汕的耗烙是什么时候出现的呢?</h5>
+        </div>
+        <img style="height: 300px; width: 100%; display: block;"
+             src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22318%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20318%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_158bd1d28ef%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A16pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_158bd1d28ef%22%3E%3Crect%20width%3D%22318%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22129.359375%22%20y%3D%2297.35%22%3EImage%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+             alt="Card image">
+        <div class="card-body">
+            <p class="card-text">上世纪70年代，人们...</p>
+            <div class="tb"><i class="fa fa-eye" style="font-size:24px"></i>1316&nbsp;&nbsp;<i class="fa fa-commenting"
+                                                                                               style="font-size:24px"></i>178&nbsp;&nbsp;<i
+                    class="fa fa-star-o" style="font-size:24px"></i>103&nbsp;&nbsp;<i class="fa fa-thumbs-o-up"
+                                                                                      style="font-size:24px">886</i>
+            </div>
+        </div>
+        <div class="card-footer text-muted" style="background:#FF9900">
+            5月10日
+        </div>
+    </div>
+</div>
+
+<!--论坛公告-->
+<div id="proclaim">
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header" style="background: #336699;color: aliceblue">论坛公告</div>
+        <div class="card-body">
+            <p class="card-text"><a href="#">[精]DLSS论坛发布话题规则</a></p>
+            <p class="card-text"><a href="#">关于封禁WoLykos等十个用户的声明</a></p>
+            <p class="card-text"><a href="#">DLSS论坛导航调整</a></p>
+            <p class="card-text"><a href="#">更多>>></a></p>
+        </div>
+    </div>
+</div>
+
+<!--一周热门话题-->
+<div id="weekhot">
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header" style="background: #336699;color: aliceblue">本周热议</div>
+        <div class="card-body">
+            <ol>
+                <li><p class="card-text"><a href="#">糖油粑粑哪里的好吃?</a></p></li>
+                <li><p class="card-text"><a href="#">全聚德烤鸭</a></p></li>
+                <li><p class="card-text"><a href="#">旧法制冰糖葫芦</a></p>
+                    <p class="card-text"><a href="#">更多>>></a></p>
+            </ol>
+        </div>
+    </div>
+</div>
+
+<!--话题正文区-->
+<div class="topic-box">
+    <div class="list-group">
+        <div>
+            <h3 class="card-header" style="background:#FF9900">话题</h3>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between" style="background: rgb(250, 250, 235)">
+                    <h5 class="mb-1">柳州螺蛳粉</h5>
+                    <small class="text-muted">12:00</small>
+                </div>
+                <p class="mb-1">今天坐了4小时车为了一口柳州螺蛳粉...</p>
+                <small class="text-muted">
+                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                    母猪上树</small>
+                </p>
+                <div class="tb1"><i class="fa fa-eye"></i>16&nbsp;&nbsp;<i
+                        class="fa fa-commenting"></i>178&nbsp;&nbsp;<i class="fa fa-star-o"></i>13&nbsp;&nbsp;<i
+                        class="fa fa-thumbs-o-up">6</i></div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">小学回忆啊！！</h5>
+                    <small class="text-muted">12:20</small>
+                </div>
+                <p class="mb-1">学校门口居然卖这个...</p>
+                <small class="text-muted">
+                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                    啦啦啦德玛西亚</small>
+                <div class="tb1"><i class="fa fa-eye"></i>16&nbsp;&nbsp;<i
+                        class="fa fa-commenting"></i>178&nbsp;&nbsp;<i class="fa fa-star-o"></i>13&nbsp;&nbsp;<i
+                        class="fa fa-thumbs-o-up">6</i></div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">求助</h5>
+                    <small class="text-muted">12:10</small>
+                </div>
+                <p class="mb-1">深圳哪里的新疆餐厅正宗呢...</p>
+                <small class="text-muted">
+                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                    吃不到鸡</small>
+                <div class="tb1"><i class="fa fa-eye"></i>13&nbsp;&nbsp;<i
+                        class="fa fa-commenting"></i>170&nbsp;&nbsp;<i class="fa fa-star-o"></i>123&nbsp;&nbsp;<i
+                        class="fa fa-thumbs-o-up">63</i></div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">曝光黑店</h5>
+                    <small class="text-muted">12:05</small>
+                </div>
+                <p class="mb-1">曝光某宝上的“XXX店”出售过期土特产...</p>
+                <small class="text-muted">
+                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                    打假小学生</small>
+                <div class="tb1"><i class="fa fa-eye"></i>162&nbsp;&nbsp;<i
+                        class="fa fa-commenting"></i>18&nbsp;&nbsp;<i class="fa fa-star-o"></i>123&nbsp;&nbsp;<i
+                        class="fa fa-thumbs-o-up">63</i></div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">来一波佛山</h5>
+                    <small class="text-muted">11:10</small>
+                </div>
+                <p class="mb-1">明信老铺的双皮奶和炸牛奶！！！</p>
+                <small class="text-muted">
+                    <div style="width:25px;height:25px;border-radius:50px;border:solid rgb(100,100,100) 1px;"
+                         class=imag><img src="resources/assets/img/gril.jpg" alt=""/></div>
+                    舔食怪</small>
+                <div class="tb1"><i class="fa fa-eye"></i>116&nbsp;&nbsp;<i
+                        class="fa fa-commenting"></i>18&nbsp;&nbsp;<i class="fa fa-star-o"></i>133&nbsp;&nbsp;<i
+                        class="fa fa-thumbs-o-up">63</i></div>
+            </a>
+        </div>
+    </div>
+</div>
+<!--底部翻页按钮-->
+<div id="next">
+    <ul class="pagination">
+        <li class="page-item disabled">
+            <a class="page-link" href="#">&laquo;</a>
+        </li>
+        <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">2</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">3</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">4</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">5</a>
+        </li>
+        <li class="page-item">
+            <a class="page-link" href="#">&raquo;</a>
+        </li>
+        <p>跳转<input type="text" name="jump" value=""><input type="submit" value="go"></p>
+    </ul>
+</div>
+
+<!--js-->
+<script>
+    $("").mouseenter(function () {
+
+    });
+</script>
+</body>
+</html>

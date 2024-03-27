@@ -11,9 +11,10 @@ func Load(r *gin.Engine) {
 
 	// 资源路径
 	r.Static("resources/assets", "./resources/assets")
-
+	r.LoadHTMLGlob("resources/views/*")
 	userController := new(user.UserController)
 
+	// 路由group
 	// 无权限路由组
 	noAuthRouter := r.Group("/").Use(middlewares.NoAuth())
 	{
@@ -27,6 +28,9 @@ func Load(r *gin.Engine) {
 		noAuthRouter.Any("/health", func(ctx *gin.Context) {
 			ctx.String(200, "ok")
 		})
+		r.GET("/index", userController.Index)
+		// 自己写的无权限路由 liufengshuang
+		// noAuthRouter.Any("/user/info1", userController.HelloWord)
 	}
 
 	// 权限路由组

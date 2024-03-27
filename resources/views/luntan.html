@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>DLSS-LUNTAN</title>
+    <meta charset="utf-8">
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap-reboot.css">
+    <link rel="stylesheet" type="text/css" href="resources/assets/css/bootstrap-reboot.min.css">
+
+    <link rel="stylesheet" href="resources/assets/font-awesome/css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="resources/assets/font-awesome/css/font-awesome.min.css" type="text/css">
+    <link href="resources/assets/css/LTstyle.css" rel="stylesheet" type="text/css">
+
+    <!--js-->
+    <script src="resources/assets/js/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+<!--顶部主菜单 搜索栏-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="resources/assets/img/logo.jpeg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+            aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation" style="">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">主页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">特产</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">博客</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">关于我们</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="话题搜索">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">搜索</button>
+        </form>
+    </div>
+</nav>
+<!--左侧按钮-->
+<div class="btn-group-vertical" data-toggle="buttons">
+    <button type="button" style="background-color: rgb(233, 121, 16);border-color: rgb(233, 121, 16)"
+            class="btn btn-primary">我的话题
+    </button>
+    <button type="button" style="background-color: rgb(233, 121, 16);border-color: rgb(233, 121, 16)"
+            class="btn btn-primary">我的收藏
+    </button>
+    <button type="button" style="background-color: rgb(233, 121, 16);border-color: rgb(233, 121, 16)"
+            class="btn btn-primary">我的评论
+    </button>
+    <button type="button" style="background-color: rgb(233, 121, 16);border-color: rgb(233, 121, 16)"
+            class="btn btn-primary">我的点赞
+    </button>
+</div>
+<!--论坛公告-->
+<div id="proclaim">
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header" style="background: #336699;color: aliceblue">论坛公告</div>
+        <div class="card-body">
+            <p class="card-text"><a href="#">[精]DLSS论坛发布话题规则</a></p>
+            <p class="card-text"><a href="#">关于封禁WoLykos等十个用户的声明</a></p>
+            <p class="card-text"><a href="#">DLSS论坛导航调整</a></p>
+            <p class="card-text"><a href="#">更多>>></a></p>
+        </div>
+    </div>
+</div>
+
+<!--一周热门话题-->
+<div id="weekhot">
+    <div class="card border-primary mb-3" style="max-width: 20rem;">
+        <div class="card-header" style="background: #336699;color: aliceblue">本周热议</div>
+        <div class="card-body">
+            <ol>
+                <li><p class="card-text"><a href="#">糖油粑粑哪里的好吃?</a></p></li>
+                <li><p class="card-text"><a href="#">全聚德烤鸭</a></p></li>
+                <li><p class="card-text"><a href="#">旧法制冰糖葫芦</a></p>
+                    <p class="card-text"><a href="#">更多>>></a></p>
+            </ol>
+        </div>
+    </div>
+</div>
+<!--论坛正文区-->
+<div id="Topic">
+    <div class="card-mb-3" style="position: relative;">
+        <h6 class="card-header" style="background:#FF9900">回复0，共1帖<a href="#"
+                                                                         style="position: relative;left:750px;color:#336699">>>返回论坛主页</a>
+        </h6>
+        <h3 class="card-header" style="background:rgb(250, 250, 235)">柳州螺蛳粉</h3>
+        <div class="bt-group">
+            <button type="button"
+                    style="background-color: rgb(250, 250, 250);border-color: rgb(76, 66, 219);color:rgb(7, 6, 7)"
+                    class="btn btn-primary btn-sm">只看楼主
+            </button>&nbsp;
+            <button type="button"
+                    style="background-color: rgb(250, 250, 250);border-color: rgb(76, 66, 219);color:rgb(7, 6, 7)"
+                    class="btn btn-primary btn-sm"><i class="fa fa-commenting"></i>回复
+            </button>&nbsp;
+            <button type="button"
+                    style="background-color: rgb(250, 250, 250);border-color: rgb(76, 66, 219);color:rgb(7, 6, 7)"
+                    class="btn btn-primary btn-sm"><i class="fa fa-star-o"></i>收藏
+            </button>&nbsp;
+            <button type="button"
+                    style="background-color: rgb(250, 250, 250);border-color: rgb(76, 66, 219);color:rgb(7, 6, 7)"
+                    class="btn btn-primary btn-sm"><i class="fa fa-thumbs-o-up"></i>点赞
+            </button>
+        </div>
+        <!--在此处添加四个按钮 只看题主 回复 收藏 点赞-->
+        <div class="left-body">
+            <h6 class="card-subtitle text-muted">
+                <div style="width:140px;height:140px;border: 4px solid rgb(100,100,100);" class=imag-lt><img
+                        src="resources/assets/img/gril.jpg" class="img-thumbnail" alt=""/><br><br><br>乌克兰小乳猪
+                </div>
+            </h6>
+        </div>
+
+        <div class="right-body">
+            <p class="card-text">上世纪70年代，人们...</p>
+        </div>
+        <div class="bottom-body" style="background:rgb(250, 250, 235);border-top:1px solid rgb(224, 200, 200);">
+            <p>1楼&nbsp;&nbsp;&nbsp;&nbsp;5-10&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">举报</a></p>
+        </div>
+    </div><!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <div class="card-mb-3" style="position: relative;">
+        <h6 class="card-header" style="background:#FF9900"></h6>
+        <div class="left-body">
+            <h6 class="card-subtitle text-muted">
+                <div style="width:140px;height:140px;border: 4px solid rgb(100,100,100);" class=imag-lt><img
+                        src="img/gril.jpg" class="img-thumbnail" alt=""/><br><br><br>乌克兰小乳猪
+                </div>
+            </h6>
+        </div>
+
+        <div class="right-body">
+            <p class="card-text">上世纪70年代，人们...</p>
+        </div>
+        <div class="bottom-body" style="background:rgb(250, 250, 235);border-top:1px solid rgb(224, 200, 200);">
+            <p>2楼&nbsp;&nbsp;&nbsp;&nbsp;5-10&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">举报</a></p>
+        </div>
+    </div>
+    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+    <div class="card-mb-3" style="position: relative;">
+        <h6 class="card-header" style="background:#FF9900"></h6>
+        <div class="left-body">
+            <h6 class="card-subtitle text-muted">
+                <div style="width:140px;height:140px;border: 4px solid rgb(100,100,100);" class=imag-lt><img
+                        src="resources/assets/img/gril.jpg" class="img-thumbnail" alt=""/><br><br><br>乌克兰小乳猪
+                </div>
+            </h6>
+        </div>
+
+        <div class="right-body">
+            <p class="card-text">上世纪70年代，人们...</p>
+        </div>
+        <div class="bottom-body" style="background:rgb(250, 250, 235);border-top:1px solid rgb(224, 200, 200);">
+            <p>3楼&nbsp;&nbsp;&nbsp;&nbsp;5-10&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">举报</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

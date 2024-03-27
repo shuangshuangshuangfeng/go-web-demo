@@ -2,13 +2,14 @@ package main
 
 //go:generate protoc --go_out=plugins=grpc:./ protos/rpc.server.proto
 import (
-	"github.com/gin-gonic/gin"
 	"go-web-demo/app/jobs"
 	"go-web-demo/app/middlewares"
 	"go-web-demo/kernel/bootstrap"
 	"go-web-demo/kernel/tconfig"
 	"go-web-demo/kernel/zlog"
 	"go-web-demo/routes"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -31,7 +32,7 @@ func initRouter() *gin.Engine {
 		gin.SetMode(gin.ReleaseMode)
 	}
 	gin.SetMode(gin.ReleaseMode)
-	// 初始化引擎
+	// 初始化引擎 gin框架引擎
 	r := gin.New()
 	// 公共中间件
 	r.Use(middlewares.CommonMiddleware())

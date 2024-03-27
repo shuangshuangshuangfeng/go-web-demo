@@ -1,0 +1,270 @@
+html, body{
+	background:#FFFFCC;
+	font-family: 'Raleway', sans-serif;
+}
+
+#logo
+{
+	top:10px;
+	left:10px;
+}
+
+#Login-box
+{
+	width: 400px;
+	height: 40px;
+	position: absolute;
+	top:0;
+	right:0;
+	background:#2980b9
+}
+
+.search-box
+{
+
+	position: absolute;
+	top:100px;
+	left:1300px;
+	background:#ddcf07
+}
+
+#mine
+{
+	width:270px;
+	height: 360px;
+	position: absolute;
+	top:200px;
+	left:0px;
+	background: #07e980
+}
+
+#HotTopic
+{
+	width:1000px;
+	height:360px;
+	position: absolute;
+	top:120px;
+	left:300px;
+}
+
+#proclaim
+{
+	width:400px;
+	height: 360px;
+	position: absolute;
+	top:120px;
+	left:1325px;
+}
+
+#weekhot
+{
+	width:400px;
+	height:360px;
+	position: absolute;
+	top:380px;
+	left:1325px;
+}
+
+.topic-box
+{
+	width:1000px;
+	height:720px;
+	position: absolute;
+	top:740px;
+	left:300px;
+}
+
+.Tologin li{
+	list-style:none;
+	float:left;
+}
+
+form {   
+	margin: 0;   
+	}   
+	
+.search-box {   
+width: 201px;   
+height: 31px;   
+background: url(http://files.jb51.net/demoimg/200912/bg_search_box.gif);   
+}   
+.search_box .search {   
+float: left;   
+padding: 0;   
+margin: 6px 0 0 6px;   
+border: 0;   
+width: 159px;   
+background: none;   
+font-size:;
+}   
+.search_box #go {   
+float: right;   
+margin: 3px 4px 0 0;   
+}   
+
+.btn-group-vertical{
+	position: fixed;
+	width: 100px;
+	height:180px;
+	left:180px;
+	top:105px;
+}
+
+#next{
+	left:560px;
+	top:1480px;
+	position: absolute;
+}
+
+.card-body{
+	background: rgb(250, 250, 235);
+}
+
+.imag{
+	display: flex;
+	justify-content: center;
+	align-items: center;  
+	overflow: hidden;
+	display: inline-block;
+    vertical-align: middle;
+}
+.imag img{  
+	width: 100%;
+
+}
+.tb{
+	top:520px;
+	left:750px;
+	position: absolute;
+}
+.tb1{
+	text-align: right;
+}
+#Topic
+{
+	width:1000px;
+	height:360px;
+	position: relative;
+	top:30px;
+	left:300px;
+}
+
+.left-body{
+	width:230px;
+	height:380px;
+	position: relative;
+	background: rgb(238, 209, 167);
+	top:5px;
+}
+.right-body{
+	width:770px;
+	height:380px;
+	position: relative;
+	background:rgb(250, 250, 235);
+	margin-left:230px;
+	top:-374px;
+}
+.bottom-body{
+	width:1000px;
+	height:30px;
+	position: relative;
+	margin-top:-375px;
+	margin-left:0px;
+	text-align: right;
+}
+
+.buttom-body button{
+	left:10px;
+	position: relative;
+}
+
+.imag-lt{
+	position: relative;
+	top:40px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.imag-lt img{  
+	width: 100%;
+
+}
+.bt-group{
+	position: relative;
+	left:710px;
+	margin-top:-45px;
+	margin-bottom: 15px;
+	margin-left: 0px;
+	margin-right: auto;
+}
+
+.personal-box{
+	position: relative;
+	margin-top:30px;
+	width:600px;
+	height: 140px;
+	background: rgb(253, 253, 241);
+	padding: 20px;
+}
+
+.personal-imag-box{
+	display: inline;
+	float: left;
+}
+
+.personal-name{
+	display: inline;
+	position: relative;
+	left:20px;
+
+}
+
+.personal-num{
+	list-style: none;
+	float:left;
+}
+.personal-num-box{
+	display: inline;
+	position: relative;
+	left:25px;
+	top:-10px;
+}
+
+.personal-button-box{
+	display: inline;
+	position: relative;
+	float:right;
+	top:-40px;
+}
+
+.personal-information-box{
+	position: relative;
+	left:30px;
+	top:30px;
+	width:400px;
+}
+
+.article{
+	position: relative;
+	background: rgb(253, 253, 241);
+	width:570px;
+	left:400px;
+	top:30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left:10px; 
+	border-style: solid;
+	border-bottom-color: rgb(228, 216, 216);
+	border-top-color:rgb(228, 216, 216);
+	border-left-color:#FFFFCC;
+	border-right-color:#FFFFCC; 
+	border-width: 1px;
+}
+
+.personal-top{
+	background: rgb(253, 253, 241);
+	position: relative;
+	left:400px;
+	width:400px;
+	height: 300px;
+}
